@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Montserrat", "sans-serif";
+    min-height: 100%;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  :root {
+    --section-color: rgb(255, 255, 255, 0.9);
+  }
