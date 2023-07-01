@@ -1,0 +1,180 @@
+select#projects:focus {
+    outline: none;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .login {
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+    left: 10px;
+  }
+  
+  .sign-in {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  
+  .user-img {
+    border-radius: 50px;
+    width: 60px;
+  }
+  
+  label {
+    align-self: center;
+  }
+  
+  .hide {
+    visibility: hidden;
+  }
+  
+  .clear-all-button {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 30px;
+    align-self: center;
+    position: absolute;
+    right: 10px;
+  }
+  .clear-all-button:hover {
+    background-color: #b8b3b2;
+  }
+  
+  input {
+    font-family: "Montserrat", "sans-serif";
+  }
+  
+  ::spelling-error {
+    text-decoration: none;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 9px;
+    overflow: auto;
+    height: 9px;
+    background: antiquewhite;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border: transparent;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: currentcolor;
+    border-radius: 10px;
+  }
+  
+  ::placeholder {
+    font-family: "Montserrat", "sans-serif";
+  }
+  
+  #images-ul {
+    justify-content: center;
+    max-width: 36em;
+    width: 35em;
+    display: flex;
+    gap: 2px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #e7c6ed;
+    padding: 10px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  
+    align-content: normal;
+  }
+  
+  img {
+    cursor: pointer;
+  }
+  
+  .img {
+    width: 53px;
+    height: 38px;
+    border-radius: 5px;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+  
+  .expand {
+    position: absolute;
+    min-height: 526px;
+    min-width: 500px;
+    opacity: revert;
+    z-index: 1;
+    background: white;
+  }
+  
+  @keyframes fadeInFromNone {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+  
+    1% {
+      display: block;
+      opacity: 0;
+    }
+  
+    100% {
+      display: block;
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 574px) {
+    .input-form {
+      width: 250px;
+    }
+    #form-bottom-input {
+      flex-direction: column;
+    }
+    #due-date-input,
+    #project-input,
+    #add-button {
+      width: 158px;
+      text-align: inherit;
+    }
+    #add-button {
+      text-align: center;
+    }
+    .delete-button,
+    .delete-checklist-button {
+      display: initial;
+    }
+    #images-ul {
+      width: 181px;
+    }
+  }
+  
+  @media (max-width: 870px) {
+    .login {
+      position: initial;
+    }
+    .clear-all-button {
+      position: initial;
+    }
+    .header {
+      justify-content: space-around;
+    }
+  }
